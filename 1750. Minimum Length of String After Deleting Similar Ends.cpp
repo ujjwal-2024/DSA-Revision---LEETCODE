@@ -20,4 +20,24 @@ public:
         return j-i+1;
     }
 };
+
+Time Complexity
+O(n)
+Because both pointers move inward only once.
+Space Complexity
+O(1)
+No extra space used.
+What Your Code Does
+
+
+i → left pointer
+j → right pointer
+
+If both ends have the same character:
+
+Store that character in ch
+Remove all occurrences of ch from left
+Remove all occurrences of ch from right
+Continue until ends differ
+then return j-i+1;
 */
